@@ -1,0 +1,13 @@
+.rvmrc
+.rspec
+.ruby-version
+.ruby-gemset
+*.sass-cache
+**.orig
+public/javascripts/lib
+public/css/
+spec/vcr_cassettes
+vendor/ruby
+.bundle
+notes/*
+coverage/
