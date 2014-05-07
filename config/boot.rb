@@ -4,8 +4,6 @@ def env
   (ENV['RACK_ENV'] || 'development').to_sym
 end
 
-ROOT = Dir.pwd
-
 gemfile = File.expand_path('../../Gemfile', __FILE__)
 
 begin
@@ -19,6 +17,10 @@ rescue Bundler::GemNotFound => e
 end if File.exist?(gemfile)
 
 Bundler.require(:default, env)
+
+ROOT = Dir.pwd
+
+Slim::Engine.set_default_options attr_wrapper: "'", disable_escape: true
 
 Dir[
   "#{ROOT}/config/initializers/*.rb",

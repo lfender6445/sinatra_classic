@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'slim'
-
-gem 'sinatra', '~> 1.0.0'
-gem 'tilt', '~> 1.4.1'
+gem 'sinatra', '~> 1.4.2'
 
 group :development do
   gem 'better_errors'
@@ -11,11 +9,12 @@ group :development do
 end
 
 group :test do
-  gem 'webmock'
+  gem 'rspec'
   gem 'vcr'
 end
 
 group :development, :test do
+  gem 'pry'
   gem 'pry-debugger'
 end
 
