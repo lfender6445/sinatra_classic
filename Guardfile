@@ -1,8 +1,8 @@
 coffee_opts = {
   all_on_start: true,
   input: 'app/assets/coffee',
-  output: 'public/js',
-  bare: true
+  output: 'public/js'
+  # bare: true
 }
 
 sass_opts = {
