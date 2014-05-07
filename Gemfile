@@ -6,6 +6,7 @@ gem 'sinatra', '~> 1.4.2'
 group :development do
   gem 'better_errors'
   gem 'rubocop'
+  gem 'guard-sass'
 end
 
 group :test do
